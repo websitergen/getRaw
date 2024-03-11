@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Cairo", sans-serif;
+
+}
+
+.image-cont{
+    width: 100%;
+    height: 100vh;
+}
+
+.image-cont div{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.image-cont div img{
+    animation: rotate 0.8s ease forwards;
+    border-radius: 30px;
+
+}
+
+@keyframes rotate{
+    0%{
+        scale: 0;
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.7;
+    }
+    100%{
+        scale: 1;
+        rotate: 360deg;
+        opacity: 1;
+    }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+    gap: 40px;
+}
+
+
+.ans{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ans div{
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+    align-items: center;
+}
+
+.ans div span{
+    font-size: 25px;
+    opacity: 0.9;
+}
+
+.ans div input{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.mthr{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 20px;
+}
+.qs{
+    text-align: right;
+    opacity: 0.9;
+}
+
+.btn button{
+    width: 100%;
+    height: 40px;
+    font-size: 19px;
+    background-color: rgb(238, 238, 15);
+    border: 1px solid rgb(78, 76, 76);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.btn button:hover{
+    background-color: rgba(238, 238, 15, 0.767);
+
+}
+
+.btn button:active{
+    background-color: rgb(238, 238, 15);
+
+}
+
+.true{
+    display: none;
+}
+
+
+
+.true{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.true h2{
+    background-color: rgb(236, 236, 12);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.true h3{
+    opacity: 0.8;
+}
+
+
+.fixed{
+    top: 90px;
+    right: 650px;
+    background-color: rgb(231, 231, 15);  
+    text-align: center;
+}
